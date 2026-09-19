@@ -184,3 +184,4 @@ MIT — see [LICENSE](LICENSE).
 
 - [@akshayvarala](https://github.com/akshayvarala) — owner
 - [@manojkumar9121](https://github.com/manojkumar9121) — contributor
+- [@bspk01](https://github.com/bspk01) — contributor
