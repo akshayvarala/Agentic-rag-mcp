@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-rag-mcp"
+version = "0.1.0"
+description = "Agentic-RAG-MCP: local-first RAG retrieval engine for agentic environments via MCP"
+requires-python = ">=3.11"
+dependencies = [
+    "qdrant-client>=1.12.0",
+    "markitdown[microsoft]",
+    "python-dotenv",
+    "pydantic>=2.0",
+    "pydantic-settings",
+    "mcp>=2.0,<3",
+    "sentence-transformers>=3.0",
+    "huggingface-hub>=0.20.0",
+]
+
+[project.optional-dependencies]
+gguf = ["llama-cpp-python>=0.3.0"]
+openai = ["openai>=1.0"]
+cohere = ["cohere>=5.0"]
+all = ["agentic-rag-mcp[gguf,openai,cohere]"]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[project.scripts]
+agentic-rag-mcp = "rag.cli:main"
+rag = "rag.cli:main"
+mcp-rag-local = "rag.cli:main"
+
+[project.entry-points."rag.embeddings"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rag*"]
+
+[tool.setuptools.package-data]
+rag = ["*.py"]
