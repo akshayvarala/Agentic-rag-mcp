@@ -176,13 +176,6 @@ security (traversal/absolute-path/null-byte/oversize), pipeline, MCP tools, LLM.
 - A GGUF embedding model **or** one of the API providers
 - ~1GB disk for Qdrant data (grows with corpus)
 
-## Roadmap
-
-- [ ] `LocalReranker` (Qwen3-Reranker-0.6B cross-encoder)
-- [ ] Dense vs Dense+Reranker quality experiment
-- [ ] Docker image + `uvx` one-liner
-- [ ] Vision milestone via `mmproj` multimodal projection
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
