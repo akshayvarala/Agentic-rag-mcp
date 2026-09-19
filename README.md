@@ -11,7 +11,7 @@ Local-first RAG **retrieval engine** built as a plugin for agentic environments 
 
 ## Why
 
-Agentic coding tools (opencode, Claude Desktop, Hermes, …) are great at reasoning but have no memory of *your* documents. Agentic-RAG-MCP fills that gap:
+Agentic coding tools (opencode, Claude Desktop, Hermes, pi, …) are great at reasoning but have no memory of *your* documents. Agentic-RAG-MCP fills that gap:
 
 - **Ingest** PDFs, DOCX, code, notes → normalized Markdown → chunks → embeddings → local vector DB
 - **Search** via MCP tools with metadata filtering — the agent grounds answers in your data
